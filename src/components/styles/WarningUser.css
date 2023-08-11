@@ -1,0 +1,59 @@
+.warninguser-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-overlayDefault);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: transform 200ms ease;
+}
+
+.close-warning {
+    transform: scale(0);
+}
+
+.warninguser {
+    width: 100%;
+    max-width: 300px;
+    padding: var(--sp-1-5) var(--sp-1-5) var(--sp-2-5);
+    background-color: var(--bg-warningUser);
+    position: relative;
+}
+
+.warninguser__close {
+    position: absolute;
+    font-size: var(--size-medium);
+    top: var(--sp-1);
+    right: var(--sp-1-5);
+    cursor: pointer;
+}
+
+.warninguser__close:hover {
+    color: var(--color-hoverDefault);
+}
+
+.warninguser__title {
+    margin-bottom: var(--sp-0-5);
+    font-weight: var(--weight-medium);
+}
+
+.warninguser__message {
+    font-size: var(--size-small);
+    margin: var(--sp-1) auto;
+    display: block;
+}
+
+.warninguser__btn {
+    width: 100%;
+    font-size: var(--size-normal);
+    font-weight: var(--weight-regular);
+    padding-top: var(--sp-0-75);
+    padding-bottom: var(--sp-0-75);
+    background-color: var(--bg-buttonDefault);
+    color: var(--text-buttonDefault);
+    margin-top: var(--sp-1);
+}
